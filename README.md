@@ -1,4 +1,4 @@
-# ai-resume-screening-agent
+# AI-resume-screening-agent
 
 An AI-powered tool that analyzes and ranks resumes based on a job description using LLMs, NLP, and ATS-style evaluation.
 Built using Python, Streamlit, Groq LLM API, and PDF parsing.
