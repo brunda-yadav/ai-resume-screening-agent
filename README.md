@@ -8,7 +8,7 @@ Built using Python, Streamlit, Groq LLM API, and PDF parsing.
 ---
 [ranking](https://github.com/brunda-yadav/ai-resume-screening-agent/blob/main/output_2.png)
 ---
-[student one resume analysed ]([https://github.com/brunda-yadav/ATS-Resume-Analyzer-/blob/main/Response.png](https://github.com/brunda-yadav/ai-resume-screening-agent/blob/main/Screenshot%202025-11-29%20122955.png))
+[student one resume analysed ](https://github.com/brunda-yadav/ai-resume-screening-agent/blob/main/Screenshot%202025-11-29%20122955.png)
 
 ---
 
