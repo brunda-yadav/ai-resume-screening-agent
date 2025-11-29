@@ -1,51 +1,65 @@
-# AI-resume-screening-agent
-
-An AI-powered tool that analyzes and ranks resumes based on a job description using LLMs, NLP, and ATS-style evaluation.
-Built using Python, Streamlit, Groq LLM API, and PDF parsing.
-
+# ATS-Resume-Analyzer-
+Created an AI-driven tool to analyze resumes using Python, Streamlit, and Google Gemini. Handled PDF uploads with pdf2image &amp; Poppler and deployed the app globally via Streamlit Cloud.
 ---
-[ats.py code](https://github.com/brunda-yadav/ai-resume-screening-agent/blob/main/ats.py)
----
-[ranking](https://github.com/brunda-yadav/ai-resume-screening-agent/blob/main/output_2.png)
----
-[student one resume analysed ](https://github.com/brunda-yadav/ai-resume-screening-agent/blob/main/Screenshot%202025-11-29%20122955.png)
+Architecture 
+[Architecture ](https://github.com/brunda-yadav/ATS-Resume-Analyzer-/blob/main/Architecture%20Diagram%20.png)
 
 ---
-
+Overview
+- The AI Resume ScreeningAgent is a Streamlit-based tool that analyzes and ranks resumes using a provided Job Description (JD).
+- It extracts text from PDF resumes, uses an LLM to evaluate skills, experience, role fit, and generates an ATS-style match score.
+- The tool helps recruiters or HR teams quickly identify the most suitable candidates.
+---
 Features
-- Upload one or multiple resumes (PDF format)
-- Extract text using PyPDF2
-- AI-powered analysis using Groq LLM
-- ATS-style resume review
-- Resume–Job Description (JD) matching score
-- Ranks all candidates based on job fit
-- Clean, modern Streamlit UI
-- Works locally with secure .env API keys
+- Calculates match percentage
+- Highlights missing keywords
+- Gives improvement suggestions
 ---
-How It Works:
-User uploads resumes (PDF)
-- The app extracts text using PyPDF2
-- JD is given by the recruiter/hiring manager
-- Groq LLM evaluates:
-- Skills match
-- Strengths & weaknesses
-- Experience relevance
-- ATS-style breakdown
-- A Match Score (0–100%) is generated
-- Candidates are ranked from strongest → weakest fit
+Limitations
+- Works only with PDF resumes
+- No built-in database or user management
 ---
-Tech Stack:
+Tech Stack & APIs Used
+- Programming & Frameworks
 - Python 3.10+
-- Streamlit (UI framework)
-- Groq LLM API
-- PyPDF2 (PDF text extraction)
-- dotenv (secure environment variables)
+- Streamlit – UI web app
+- PyPDF2 – PDF text extraction
+- dotenv – Manage API keys
 ---
-RUN:
-streamlit run ats.py
+AI / LLM API
+- Groq LLM API (Ultra-fast inference)
+- Used to analyze resumes
+- Evaluate JD match
 ---
-Clone the Repository:
-git clone https://github.com/brunda-yadav/ai-resume-screening-agent.git
-Start the app
+Setup & Run Instructions
+
+1️⃣ Clone the Repository
+- git clone https://github.com/brunda-yadav/ai-resume-screening-agent.git
+cd ai-resume-screening-agent
+
+2️⃣ Create Virtual Environment
+- python -m venv venv
+
+3️⃣ Activate Environment (Windows)
+- venv\Scripts\activate
+
+4️⃣ Install Dependencies
+- pip install -r requirements.txt
+
+5️⃣ Add Your API Key
+
+- Create a file named .env and add:
+
+GROQ_API_KEY=your_api_key_here
+
+6️⃣ Run the App
+- streamlit run ats.py
 
 
+The application will open in your browser.
+---
+Potential Improvements
+- Add PDF report generation of analysis
+- Add a dashboard for recruiters
+- Add database support (MongoDB / Firebase)
+- Add visual charts (keyword match graphs)
