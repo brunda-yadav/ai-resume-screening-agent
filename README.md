@@ -13,33 +13,33 @@ Built using Python, Streamlit, Groq LLM API, and PDF parsing.
 ---
 
 Features
-Upload one or multiple resumes (PDF format)
-Extract text using PyPDF2
-AI-powered analysis using Groq LLM
-ATS-style resume review
-Resume–Job Description (JD) matching score
-Ranks all candidates based on job fit
-Clean, modern Streamlit UI
-Works locally with secure .env API keys
+- Upload one or multiple resumes (PDF format)
+- Extract text using PyPDF2
+- AI-powered analysis using Groq LLM
+- ATS-style resume review
+- Resume–Job Description (JD) matching score
+- Ranks all candidates based on job fit
+- Clean, modern Streamlit UI
+- Works locally with secure .env API keys
 ---
 How It Works:
 User uploads resumes (PDF)
-1.The app extracts text using PyPDF2
-2.JD is given by the recruiter/hiring manager
-3.Groq LLM evaluates:
-4.Skills match
-5.Strengths & weaknesses
-6.Experience relevance
-7.ATS-style breakdown
-8.A Match Score (0–100%) is generated
-9.Candidates are ranked from strongest → weakest fit
+- The app extracts text using PyPDF2
+- JD is given by the recruiter/hiring manager
+- Groq LLM evaluates:
+- Skills match
+- Strengths & weaknesses
+- Experience relevance
+- ATS-style breakdown
+- A Match Score (0–100%) is generated
+- Candidates are ranked from strongest → weakest fit
 ---
 Tech Stack:
--Python 3.10+
--Streamlit (UI framework)
--Groq LLM API
--PyPDF2 (PDF text extraction)
--dotenv (secure environment variables)
+- Python 3.10+
+- Streamlit (UI framework)
+- Groq LLM API
+- PyPDF2 (PDF text extraction)
+- dotenv (secure environment variables)
 ---
 RUN:
 streamlit run ats.py
