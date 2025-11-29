@@ -1,43 +1,51 @@
 # ai-resume-screening-agent
-AI-powered ATS Resume Analyzer using Groq Llama 3.3 70B  Set it to Public
-AI-Resume-Screening-Agent
 
-Developed an AI-powered resume screening tool using Python, Streamlit, and Groq LLM API.
-The app extracts resume text, analyzes it against a given Job Description, calculates a match percentage, and provides ATS-style insights.
+An AI-powered tool that analyzes and ranks resumes based on a job description using LLMs, NLP, and ATS-style evaluation.
+Built using Python, Streamlit, Groq LLM API, and PDF parsing.
 
-AI Resume Screening Agent
+---
+[ats.py code](https://github.com/brunda-yadav/ai-resume-screening-agent/blob/main/ats.py)
+---
+[nedded](https://github.com/brunda-yadav/ai-resume-screening-agent/blob/main/output_2.png)
+---
+[Ranking](https://github.com/brunda-yadav/ATS-Resume-Analyzer-/blob/main/Response.png)
 
-🔗 ats.py code
-
-🔗 requirements
-
-🔗 Sample Output
+---
 
 Features
-
-Calculates match percentage
-
-Highlights missing keywords / skills
-
-Provides improvement suggestions
-
-Extracts PDF text automatically
-
-Ranks multiple resumes based on JD
-
-How to Run
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Add your Groq API key
-Create a .env file in the project folder:
-
-GROQ_API_KEY=your_key_here
-
-
+Upload one or multiple resumes (PDF format)
+Extract text using PyPDF2
+AI-powered analysis using Groq LLM
+ATS-style resume review
+Resume–Job Description (JD) matching score
+Ranks all candidates based on job fit
+Clean, modern Streamlit UI
+Works locally with secure .env API keys
+---
+How It Works:
+User uploads resumes (PDF)
+1.The app extracts text using PyPDF2
+2.JD is given by the recruiter/hiring manager
+3.Groq LLM evaluates:
+4.Skills match
+5.Strengths & weaknesses
+6.Experience relevance
+7.ATS-style breakdown
+8.A Match Score (0–100%) is generated
+9.Candidates are ranked from strongest → weakest fit
+---
+Tech Stack:
+-Python 3.10+
+-Streamlit (UI framework)
+-Groq LLM API
+-PyPDF2 (PDF text extraction)
+-dotenv (secure environment variables)
+---
+RUN:
+streamlit run ats.py
+---
+Clone the Repository:
+git clone https://github.com/brunda-yadav/ai-resume-screening-agent.git
 Start the app
 
-streamlit run ats.py
+
